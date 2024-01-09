@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ea; /* Light green background */
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .result-container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #46b779; /* Green header color */
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .back-btn {
+            padding: 12px 18px;
+            border: none;
+            border-radius: 8px;
+            background-color: #64b88a; /* Light green button color */
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1.2em;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .back-btn:hover {
+            background-color: #4c9a70; /* Darker shade of green on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="result-container">
+    <h1>Crop Prediction Result</h1>
+    <p>The predicted crop is: {{ res }}</p>
+    <a href="/" class="back-btn">Back to Home</a>
+</div>
+
+</body>
+</html>
